@@ -4,7 +4,7 @@ public class L2 {
     String Key="Samber";
 
     String res = LSearch(Arr, Key);
-    if (res=="Not Found") {
+    if (res.equals("Not Found")) {
       System.err.println("Not Found");
     } else
       System.out.println("You're lookin for " + res);
@@ -12,9 +12,9 @@ public class L2 {
   }
 
   static String LSearch(String[] Arr, String key) {
-    for (int i = 0; i < Arr.length; i++) {
-      if (Arr[i] == key) {
-        return Arr[i];
+    for (String Dis:Arr) {
+      if (Dis == key) {
+        return Dis;
       }
     }
     return "Not Found";

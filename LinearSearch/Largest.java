@@ -1,6 +1,6 @@
 public class Largest {
   static int findLarget(int[] Arr) {
-    int currentMax = Arr[0];
+    int currentMax =Integer.MIN_VALUE;
     for (int i = 1; i < Arr.length; i++) {
       if (currentMax < Arr[i]) {
         currentMax = Arr[i];
